@@ -1,0 +1,46 @@
+html {
+  background-color: $whitesmoke;
+  font-size: 12px;
+}
+
+a {
+  color: $info;
+}
+
+.title {
+  font-weight: $weight-normal;
+}
+
+.section {
+  background-color: transparent;
+}
+
+.box {
+  border-radius: 2px;
+}
+
+.select::after {
+  border-color: $dark-grey;
+}
+
+.field.has-help {
+  height: 67px;
+}
+
+.card-footer-item {
+  cursor: pointer;
+  &:hover {
+    background-color: $lightest-grey;
+  }
+}
+
+// Remove Bulma conflicts with React Notifications Component
+.notifications-component .notification {
+  background-color: unset;
+  padding: unset;
+}
+
+// Bug in production
+.select select {
+  padding-right: 2.5em;
+}

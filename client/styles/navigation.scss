@@ -1,0 +1,76 @@
+.navbar {
+  background-color: $mern-primary;
+
+  &.has-shadow {
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.3);
+  }
+
+  .navbar-brand-right {
+    margin-left: auto;
+    display: flex;
+  }
+
+  .navbar-end .navbar-item:hover {
+    background: $mern-hover;
+  }
+
+  .navbar-item {
+    min-height: 44px;
+  }
+
+  .navbar-item.is-hoverable:hover {
+    background-color: $mern-hover;
+  }
+
+  .navbar-item .dropdown-caret {
+    border-top-color: $lightest-grey;
+  }
+
+  .navbar-item:not(.button).is-tab:hover {
+    border-bottom: 1px solid $white;
+  }
+
+  .navbar-item:not(.button).is-tab.is-active {
+    border-bottom: 3px solid $white;
+    color: $white;
+  }
+
+  .navbar-item:focus-within {
+    background-color: inherit;
+    color: inherit;
+  }
+
+  .navbar-item img {
+    max-height: none;
+  }
+
+  .profile-img {
+    height: 32px;
+    width: 32px;
+    border: 1px solid $mern-hover;
+    border-radius: 3px;
+    max-height: none;
+  }
+
+  .button {
+    font-weight: $weight-semibold;
+  }
+
+  .title {
+    color: $white;
+    font-weight: $weight-semibold;
+  }
+
+  .logo {
+    color: $white;
+    font: initial;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  .dropdown {
+    .title {
+      color: $black;
+    }
+  }
+}
